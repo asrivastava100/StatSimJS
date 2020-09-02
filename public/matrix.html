@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Stat Lib Simulation | Matrix</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class = "container" id="header-cont">
+                <div id = "title-sec">
+                    <h1>Matrix</h1>
+                </div>
+                <nav id = "navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><a href="matrix.html">Matrix</a></li>
+                        <li><a href="complex.html">Complex</a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </header> 
+        <div id="contentWrap">
+            <div id ="params-sec">
+                <br>
+                <div>
+                    <h2>Matrix dimensions</h2>
+                </div>
+                <br>
+                <div>
+                    <label for="rows">Number of rows:</label>
+                    <input type = "text" id="rows">
+                </div>
+                <div>
+                    <label for="cols">Number of columns:</label>
+                    <input type="text" id="cols">
+                </div>
+                <div>
+                    <label for="operation-list">Operation:</label>
+                    <select name="operation" id="op-list" onchange="selValUpdate()">
+                        <option value="blank"></option>
+                        <option value="matAdd">Add</option>
+                        <option value="matScalMult">Scalar Multiplication</option>
+                        <option value="Transpose">Transpose</option>
+                        <option value="MMULT">Matrix Multiplication</option>
+                        <option value="Cholesky">Cholesky Decomposition</option>
+                        <option value="RRE">Reduced Row Echelon</option>
+                    </select>
+                </div>
+               
+        
+            </div>
+
+           
+            
+        </div> 
+    </div>
+    
+    <footer>
+        <p>StatSimJS Lib &sigma;: 2020</p>
+    </footer>   
+    </body>
+
+</html>  
+
+
+
+<script src="matrixFeScript.js"></script>
+
+
+
+

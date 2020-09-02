@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Stat Lib Simulation | Home</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <header>
+            
+            <div class = "container" id="header-cont">
+                <div id = "title-sec">
+                    <h1>Simulation</h1>
+                </div>
+                <nav id = "navbar">
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="matrix.html">Matrix</a></li>
+                        <li><a href="complex.html">Complex</a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </header> 
+        <div id="contentWrap">
+            <div id ="params-sec">
+                <br>
+                <div>
+                    <h2>Sample characteristics</h2>
+                </div>
+                <br>
+                <div>
+                    <label for="ssize">Sample size:</label>
+                    <input type = "text" id="ssize">
+                </div>
+                <div>
+                    <label for="dist-list">Distribution:</label>
+                    <select name="distribution" id="dist-list">
+                        <option value="blank"></option>
+                        <option value="Bernoulli">Bernoulli</option>
+                        <option value="Beta">Beta</option>
+                        <option value="Binomial">Binomial</option>
+                        <option value="Chisq">Chi-square</option>
+                        <option value="Unif">Continuous Uniform</option>
+                        <option value="Exp">Exponential</option>
+                        <option value="F">F dist</option>
+                        <option value="Gamma">Gamma</option>
+                        <option value="Lnorm">Log Normal</option>
+                        <option value="Norm">Normal</option>
+                        <option value="Pois">Poisson</option>
+                        <option value="T">T dist</option>
+                        <option value="Weibull">Weibull</option>    
+                    </select>
+                </div>
+
+            </div>
+
+            <section>
+                <div class="chart-container" id = "ChCont1" style="position: relative;height:77.5vh;width:80vw;">
+                <canvas id="myChart"></canvas>
+                </div>
+            </section>
+        </div> 
+    </div>
+    
+    <footer>
+        <p>StatSimJS Lib &sigma;: 2020</p>
+    </footer>   
+    </body>
+
+</html>  
+
+<script src="simulationFeScript.js"></script>
+
+
+
+
+

@@ -1,0 +1,239 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding:0;
+    margin: 0;
+}
+
+body h2{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+header{
+    background-color: #1D6F9F;
+    border-bottom: #000000 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header #title-sec{
+    float: left;
+    margin:0;
+    padding:0;
+    
+}
+
+header #title-sec h1{
+    margin:0;
+    color: #ffffff;
+}
+
+header a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:15px;
+}
+
+header li{
+    padding:0 20px 0 20px;
+    display: inline;
+}
+
+
+
+header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+
+}
+
+header .current a{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#navbar {
+    float:right;
+    margin-top: 10px;
+}
+
+#contentWrap{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:1vw;
+    grid-auto-rows:minmax(100px,auto);
+    overflow: hidden;
+    
+
+}
+
+#params-sec{
+    background-color: #1897AC;
+    color: #000000;
+    padding:10px;
+}
+
+
+input[type=text], select{
+    padding:5px 5px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:4px;
+    box-sizing: border-box;
+    width: 100%;
+    ;
+}
+
+label{
+    width:auto;
+    display: inline-block;
+    font-size: 16px;
+    color:#ffffff;
+}
+
+.button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+footer{
+    text-align: center;
+    background-color: #1D6F9F;
+    padding:5vh;
+    color: white;
+    
+}
+#params-sec{
+    min-height: 75vh;
+}
+
+#matIO{
+    
+    min-height: 78vh;
+}
+
+#matIO input[type = text]{
+    width:8vw;
+}
+
+#mat1, #mat2{
+    display: grid;
+    grid-template-columns:minmax(100px,auto) ;
+    grid-gap:1vw;
+    grid-auto-rows: auto;
+    overflow: hidden;
+}
+
+.compRes{
+  
+    width:60%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-gap:1vw;
+    grid-auto-rows: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+.compRes label h1,h3{
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    
+    
+}
+
+.compRes input[type=text]{
+    margin-right:0;
+}
+
+@media(max-width:760px){
+    header #title-sec,
+    header nav
+    header nav li,
+    #navbar,.container
+    {
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom:20px;
+
+    }
+
+    #contentWrap{
+       
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap:1vw;
+        grid-auto-rows: auto auto;
+        width: 100%;
+       
+
+    }
+    #chart-container{
+        width: auto;
+        position: relative;
+        height: auto;
+        
+    }
+
+    #params-sec{
+        min-height:70vh;
+    }
+    
+    #matIO input[type = text]{
+        width:12vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
