@@ -100,7 +100,32 @@ The library offers the following functions:
 
 # Matrix
 
-- 
+- This module offers the Matrix class. An instance of this class can be created by passing a multi-dimesnional array of numbers to the Matrix constructor.
+
+- The following methods are available.
+
+
+1. matAdd -- args(this, other) -- 'other' matrix must be of the same dimension as 'this'.
+- returns a matrix whose entries are obtained by adding each entry of 'this' to each entry of 'other'.
+
+2. matScalMult -- args(this,constant)
+- returns a matrix whose entries are obtained by multiplying each entry by the scalar (constant).
+
+3. matTranspose -- args(this)
+- returns the transpose of this matrix. 
+
+4. matMult -- args(this, other) -- the number of rows of 'other' must be equal to the number of cols of 'this'.
+- returns the result of multiplying this with other. result matrix dimension is n x k where n is the number of rows of this and k is the number of columns of other.
+
+5. matCholesky -- args(this) -- matrix must be a square matrix i.e. number of rows = number of columns.
+- returns the Cholesky decomposition (Lower triangular matrix) if it exists.
+- Note that a result should exist if the matrix is real and positive definite. However, in the event that this is not the case, this method might not find the result. In this case it is recommended to use other tools to find the Cholesky decomposition until this capability is added to the method. 
+- Please see https://en.wikipedia.org/wiki/Cholesky_decomposition for more information on the method used to compute the Cholesky decomposition (The Cholesky–Banachiewicz and Cholesky–Crout algorithms).
+
+6. RRE -- args(this) 
+- returns the reduced row echelon form of the matrix. 
+
+
 
 
 
