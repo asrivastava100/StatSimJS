@@ -100,7 +100,7 @@ The library offers the following functions:
 
 # Matrix
 
-- This module offers the Matrix class. An instance of this class can be created by passing a multi-dimesnional array of numbers to the Matrix constructor.
+- This module offers the Matrix class. An instance of this class can be created by passing a multi-dimensional array of numbers to the Matrix constructor.
 
 - The following methods are available:
 
@@ -154,11 +154,11 @@ The library offers the following functions:
 
 # API
 
--Users can use different sections of this library in their Express app. E.g. to include the sim.js file, include the following line of code in your index.js file: const sim = require('./src/sim.js'). Note: here you need to include the file path. In the example, sim.js is in the folder src.
+- Users can use different sections of this library in their Express app. E.g. to include the sim.js file, include the following line of code in your index.js file: const sim = require('./src/sim.js'). Note: here you need to include the file path. In the example, sim.js is in the folder src.
 
--Each of the files (sim.js, comp.js, mat.js) has a simulation class (Simulation, MatSim, CompSim). The user creates a new instance of the simulation class and provides the data through the constructor. 
+- Each of the files (sim.js, comp.js, mat.js) has a simulation class (Simulation, MatSim, CompSim). The user creates a new instance of the simulation class and provides the data through the constructor. 
 
--Use the Run() method to run the simulation. You will now have access to a results object which you can use. 
+- Use the Run() method to run the simulation. You will now have access to a results object which you can use. 
 
 # API - Simulation
 (using sim.js)
@@ -168,7 +168,7 @@ The library offers the following functions:
     - The parameters (excluding ssize) (as array) e.g [1,1]
     - Optional: WarnOn = true (by default) - This needs to be configured.- In the website for the library, this is used to send a message to the front end. It helps provide warnings on sample sizes <10000 and any errors encountered during simulation. 
 
--After running the Run() method the user has access to:
+- After running the Run() method the user has access to:
     - the sample (this.output)
     - the sample mean (this.mean)
     - the sample variance (this.Variance)
@@ -182,7 +182,7 @@ The library offers the following functions:
     - Matrix 1 data (mat1Dat)
     - Optional: Matrix 2 data (mat2Dat) -- only required if using matAdd or matMult
     - Operation to perform (as string) (ops) -- e.g. 'MMULT'
-    NOTE: sometimes the method name may differ to the option select value. We recommend that you look at 'Important info about 'ops' variable' below. The 'ops' name should be used here.
+        - NOTE: sometimes the method name may differ to the option select value. We recommend that you look at 'Important info about 'ops' variable' below. The 'ops' name should be used here.
     - Optional: Scalar (scalarM) -- only required if using matScalMult
 
 - After running the Run() method the user has access to:
@@ -215,9 +215,9 @@ The library offers the following functions:
     - Optional: Scalar 
    
 - After running the Run() method the user has access to:
-    - the solution vector 
-    this.SolVec = {Add:resAdd,ScalM:resScalMult,CompM:resCompMult,CConj:resCompConj,Mod:resCompMod,CDiv:resCompDiv,Dem:resCompDem}
-    NOTE: where the second complex number is not provided, it is taken to be 0 + 0i in the calculations below.
+    - the solution vector (this.SolVec)
+    - this.SolVec = {Add:resAdd,ScalM:resScalMult,CompM:resCompMult,CConj:resCompConj,Mod:resCompMod,CDiv:resCompDiv,Dem:resCompDem}
+    - NOTE: where the second complex number is not provided, it is taken to be 0 + 0i in the calculations below.
     - The result of addition between Complex 1 and Complex 2: Add
     - The result of scalar multiplication between the scalar and Complex 1: ScalM
     - The result of complex multiplication between Complex 1 and Complex 2: CompM
