@@ -86,10 +86,10 @@ The library offers the following functions:
 18. jspois -- args(ssize, lambda) -- bounds(ssize > 0, lambda > 0)
 - returns 'ssize' realisations of poisson(lambda) distributed random variables.
 
-    18.1. poissonCDF -- args(x, lambda) -- bounds(x > 0 , lambda > 0)
-    - returns the probability: P(X <= x) where X ~ Poisson(lambda)
-    18.2. poissonPMF -- args(x, labmda) -- bounds(x > 0, lambda > 0)
-    - returns the probability: P(X = x) where X ~ Poisson(lambda)
+    - 18.1. poissonCDF -- args(x, lambda) -- bounds(x > 0 , lambda > 0)
+        - returns the probability: P(X <= x) where X ~ Poisson(lambda)
+    - 18.2. poissonPMF -- args(x, labmda) -- bounds(x > 0, lambda > 0)
+        - returns the probability: P(X = x) where X ~ Poisson(lambda)
 
 19. jsbeta -- args(ssize, alpha, beta) -- bounds(ssize > 0, alpha > 0, beta > 0)
 - returns 'ssize' realisations of beta(alpha, beta) distributed random variables.
@@ -218,6 +218,7 @@ The library offers the following functions:
     - the solution vector (this.SolVec)
     - this.SolVec = {Add:resAdd,ScalM:resScalMult,CompM:resCompMult,CConj:resCompConj,Mod:resCompMod,CDiv:resCompDiv,Dem:resCompDem}
     - NOTE: where the second complex number is not provided, it is taken to be 0 + 0i in the calculations below.
+    - Components of SolVec:
     - The result of addition between Complex 1 and Complex 2: Add
     - The result of scalar multiplication between the scalar and Complex 1: ScalM
     - The result of complex multiplication between Complex 1 and Complex 2: CompM
