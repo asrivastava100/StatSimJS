@@ -192,16 +192,16 @@ The library offers the following functions:
 
 - Important info about 'ops' variable. (This will be resolved in a future release)
 
-- On the matrix page of the library website, a 'select' field is being used to get the requested matrix operation. Each option has a unique option value. This is not necessarily the same as the matrix method name. So there is a discrepancy between the method name and the 'ops' name being used above. Please see below for the 'ops' name to method name mapping.
+    - On the matrix page of the library website, a 'select' field is being used to get the requested matrix operation. Each option has a unique option value. This is not necessarily the same as the matrix method name. So there is a discrepancy between the method name and the 'ops' name being used above. Please see below for the 'ops' name to method name mapping.
 
-ops name -- method name
+- ops name -- method name
 
-"matAdd" -- "matAdd"
-"matScalMult" -- "matScalarMult"
-"MMULT" -- "matMult"
-"Transpose" -- "matTranspose"
-"Cholesky" -- "matCholesky"
-"RRE" -- "RRE"
+    - "matAdd" -- "matAdd"
+    - "matScalMult" -- "matScalarMult"
+    - "MMULT" -- "matMult"
+    - "Transpose" -- "matTranspose"
+    - "Cholesky" -- "matCholesky"
+    - "RRE" -- "RRE"
 
 
 # API - Complex
