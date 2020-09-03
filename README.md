@@ -185,14 +185,14 @@ The library offers the following functions:
     NOTE: sometimes the method name may differ to the option select value. We recommend that you look at 'Important info about 'ops' variable' below. The 'ops' name should be used here.
     - Optional: Scalar (scalarM) -- only required if using matScalMult
 
--After running the Run() method the user has access to:
+- After running the Run() method the user has access to:
     - the result matrix (this.solution)
     - the error stream (this.estream)
     - the warning stream (this.wstream)
 
-Important info about 'ops' variable. (This will be resolved in a future release)
+- Important info about 'ops' variable. (This will be resolved in a future release)
 
-On the matrix page of the library website, a 'select' field is being used to get the requested matrix operation. Each option has a unique option value. This is not necessarily the same as the matrix method name. So there is a discrepancy between the method name and the 'ops' name being used above. Please see below for the 'ops' name to method name mapping.
+- On the matrix page of the library website, a 'select' field is being used to get the requested matrix operation. Each option has a unique option value. This is not necessarily the same as the matrix method name. So there is a discrepancy between the method name and the 'ops' name being used above. Please see below for the 'ops' name to method name mapping.
 
 ops name -- method name
 
