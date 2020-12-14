@@ -4,23 +4,43 @@
     <head>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Stat Lib Simulation | Complex</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <div class = "container" id="header-cont">
-                <div id = "title-sec">
-                    <h1>Complex</h1>
-                </div>
-                <nav id = "navbar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="matrix.html">Matrix</a></li>
-                        <li class="current"><a href="complex.html">Complex</a></li>
-                    </ul>
-                </nav>
-            </div>    
-        </header> 
+        <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item is-size-4 " href="index.html">
+                Simulation
+              </a>
+          
+              <a role="button" class="navbar-burger" id = "burger-cplx" aria-label="menu" aria-expanded="false" data-target="navbarLinks-cplx">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarLinks-cplx" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item" href="index.html">
+                  Home
+                </a>
+          
+                <a class="navbar-item" href="matrix.html">
+                  Matrix
+                </a>
+          
+                <a class="navbar-item is-active" href="complex.html">
+                Complex
+                </a>
+          
+                
+              </div>
+          
+            </div>
+        </nav>
+        
         <div id="contentWrap">
             <div id ="params-sec">
                 <div>
