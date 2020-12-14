@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
 <html>
     <head>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Stat Lib Simulation | Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="styles.css">
-        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            
-            <div class = "container" id="header-cont">
-                <div id = "title-sec">
-                    <h1>Simulation</h1>
-                </div>
-                <nav id = "navbar">
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="matrix.html">Matrix</a></li>
-                        <li><a href="complex.html">Complex</a></li>
-                    </ul>
-                </nav>
-            </div>    
-        </header> 
+        <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item is-size-4 " href="index.html">
+                Simulation
+              </a>
+          
+              <a role="button" class="navbar-burger" id = "burger1" aria-label="menu" aria-expanded="false" data-target="navbarLinks">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarLinks" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active" href="index.html">
+                  Home
+                </a>
+          
+                <a class="navbar-item" href="matrix.html">
+                  Matrix
+                </a>
+          
+                <a class="navbar-item" href="complex.html">
+                Complex
+                </a>
+                
+              </div>
+          
+            </div>
+          </nav>
+         
         <div id="contentWrap">
             <div id ="params-sec">
                 <br>
@@ -65,7 +82,7 @@
     </div>
     
     <footer>
-        <p>StatSimJS Lib &sigma;: 2020</p>
+        <p class="is-primary">StatSimJS Lib &sigma;: 2020</p>
     </footer>   
     </body>
 
