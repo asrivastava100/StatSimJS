@@ -4,24 +4,44 @@
     <head>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Stat Lib Simulation | Matrix</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <div class = "container" id="header-cont">
-                <div id = "title-sec">
-                    <h1>Matrix</h1>
-                </div>
-                <nav id = "navbar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="current"><a href="matrix.html">Matrix</a></li>
-                        <li><a href="complex.html">Complex</a></li>
-                    </ul>
-                </nav>
-            </div>    
-        </header> 
-        <div id="contentWrap">
+        <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item is-size-4 " href="index.html">
+                Simulation
+              </a>
+          
+              <a role="button" class="navbar-burger" id = "burger-mat" aria-label="menu" aria-expanded="false" data-target="navbarLinks-mat">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarLinks-mat" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item" href="index.html">
+                  Home
+                </a>
+          
+                <a class="navbar-item is-active" href="matrix.html">
+                  Matrix
+                </a>
+          
+                <a class="navbar-item" href="complex.html">
+                Complex
+                </a>
+          
+                
+              </div>
+        
+            </div>
+          </nav>
+         
+        <div id="contentWrap" class = "mat-contentWrap">
             <div id ="params-sec">
                 <br>
                 <div>
