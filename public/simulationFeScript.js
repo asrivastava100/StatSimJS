@@ -1,4 +1,13 @@
 
+// burger menu
+
+let burgerIcon = document.getElementById("burger1");
+let navbarMenu = document.getElementById("navbarLinks");
+burgerIcon.addEventListener('click',()=>{
+    navbarMenu.classList.toggle('is-active');
+      
+})
+
 var myChart2
 
 function CreateLabel(L_for,caption,divTA){
@@ -33,6 +42,40 @@ function BtnCreate(divTA,inHTML,id){
 
 }
 
+// On-load create Normal 0-1 graph
+
+let objOnLoad = {distribution:"Norm",sampleSize:100000,parameters:[0,1]}
+        
+        fetch('/api/',{
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json',
+
+            },
+            body: JSON.stringify(objOnLoad),
+
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.errorStream.length != 0){
+                alert(data.errorStream[0])
+            } else{
+                if(data.warnStream.length != 0){
+                    alert(data.warnStream[0])
+                }
+               
+                PlotGen(data.result,objOnLoad.distribution,objOnLoad.parameters)
+               
+              
+            }
+        })
+        .catch((error) => {
+            console.error('Error:',error);
+            
+        });
+
+
+
 let selDist = ""
 
 function selValUpdate(){
@@ -60,8 +103,9 @@ function selValUpdate(){
         document.getElementById("br3").remove()
     } 
    
-    
+  
    selDist = document.getElementById("dist-list").value;
+   
    let div1 = document.querySelector("#params-sec") 
    let div2 = document.createElement("div")
    div2.setAttribute("id", "dist-params")
@@ -644,9 +688,6 @@ document.addEventListener('click', (e)=>{
 
             function exportToJpeg(){
                 var url=myChart2.toBase64Image();
-                console.log(url)
-                console.log(myChart2)
-               
                 var y = document.createElement("A");
                 y.setAttribute("href", url);
                 y.setAttribute("download","img1.jpeg");
