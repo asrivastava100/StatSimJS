@@ -1,4 +1,14 @@
 
+// burger menu
+
+let burgerIcon = document.getElementById("burger-cplx");
+let navbarMenu = document.getElementById("navbarLinks-cplx");
+burgerIcon.addEventListener('click',()=>{
+    navbarMenu.classList.toggle('is-active');
+      
+})
+
+
 function CreateLabel(L_for,caption,divTA){
     let lbl1 = document.createElement("label")
     lbl1.setAttribute("for", L_for)
