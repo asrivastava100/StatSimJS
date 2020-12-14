@@ -80,7 +80,7 @@ header .current a{
 
 #contentWrap{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     grid-gap:1vw;
     grid-auto-rows:minmax(100px,auto);
     overflow: hidden;
@@ -88,8 +88,12 @@ header .current a{
 
 }
 
+.mat-contentWrap{
+    min-height: 80vh;
+}
+
 #params-sec{
-    background-color: #1897AC;
+    background-color: #6eb6e7;
     color: #000000;
     padding:10px;
 }
@@ -117,7 +121,6 @@ label{
     background-color: black;
     border: none;
     color: white;
-    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -125,15 +128,22 @@ label{
     
 }
 
+.button:hover{
+    color: aqua;
+    border-color: #ffffff;
+}
+
 footer{
+    margin-top: auto;
     text-align: center;
-    background-color: #1D6F9F;
+    background-color: #3298dc;
     padding:5vh;
     color: white;
     
 }
+
 #params-sec{
-    min-height: 75vh;
+    min-height: 80vh;
 }
 
 #matIO{
